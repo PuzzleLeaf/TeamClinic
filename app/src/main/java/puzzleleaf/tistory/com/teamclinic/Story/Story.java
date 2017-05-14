@@ -16,7 +16,7 @@ import puzzleleaf.tistory.com.teamclinic.processing.ReviewTree;
 
 public class Story extends AppCompatActivity {
 
-
+//소스트리 테스트
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
