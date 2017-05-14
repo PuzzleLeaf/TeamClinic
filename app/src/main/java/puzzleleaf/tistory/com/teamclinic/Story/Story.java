@@ -16,7 +16,7 @@ import puzzleleaf.tistory.com.teamclinic.processing.ReviewTree;
 
 public class Story extends AppCompatActivity {
 
-//네이티브 기반으로 변경할 것
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
