@@ -47,5 +47,6 @@ public class chapter_first extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         overridePendingTransition(0,R.anim.anim_slide_out_up);
+        
     }
 }
