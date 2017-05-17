@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <array name="chapter_first">
+        <item>@drawable/chapter_first_a</item>
+        <item>@drawable/chapter_first_b</item>
+        <item>@drawable/chapter_first_c</item>
+        <item>@drawable/chapter_first_d</item>
+        <item>@drawable/chapter_first_e</item>
+        <item>@drawable/chapter_first_f</item>
+        <item>@drawable/chapter_first_g</item>
+        <item>@drawable/chapter_first_h</item>
+        <item>@drawable/chapter_first_i</item>
+        <item>@drawable/chapter_first_j</item>
+        <item>@drawable/chapter_first_k</item>
+        <item>@drawable/chapter_first_l</item>
+        <item>@drawable/chapter_first_m</item>
+        <item>@drawable/chapter_first_n</item>
+        <item>@drawable/chapter_first_o</item>
+        <item>@drawable/chapter_first_p</item>
+        <item>@drawable/chapter_first_q</item>
+        <item>@drawable/chapter_first_r</item>
+        <item>@drawable/chapter_first_s</item>
+        <item>@drawable/chapter_first_t</item>
+        <item>@drawable/chapter_first_u</item>
+        <item>@drawable/chapter_first_v</item>
+        <item>@drawable/chapter_first_w</item>
+        <item>@drawable/chapter_first_x</item>
+        <item>@drawable/chapter_first_y</item>
+        <item>@drawable/chapter_first_z</item>
+    </array>
+
+</resources>
