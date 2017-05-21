@@ -2,8 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:id="@+id/chapter_first_story"
     android:orientation="vertical">
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        />
+    <View
+        android:layout_width="200dp"
+        android:layout_weight="2"
+        android:id="@+id/chapter_first_touch"
+        android:layout_height="match_parent"
+        />
 </LinearLayout>

@@ -1,5 +1,6 @@
 package puzzleleaf.tistory.com.teamclinic.Story.first;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import puzzleleaf.tistory.com.teamclinic.R;
+import puzzleleaf.tistory.com.teamclinic.Unity.UnityPlayerActivity;
 
 
 public class chapter_first extends AppCompatActivity {
@@ -39,6 +41,12 @@ public class chapter_first extends AppCompatActivity {
             public void onClick(View v) {
                 if(story_idx<26) {
                     first_frame.setBackgroundResource(first_story.getResourceId(story_idx++, -1));
+                }
+                else
+                {
+                    Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
+                    startActivity(intent);
+                    finish();
                 }
             }
         });

@@ -13,13 +13,6 @@
         android:id="@+id/toolbar"
         android:minHeight="?attr/actionBarSize">
     </android.support.v7.widget.Toolbar>
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:id="@+id/UnityTest"
-        android:text="Unity Test"
-        android:textColor="#ffffff"
-        android:background="#00ffffff"/>
     <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

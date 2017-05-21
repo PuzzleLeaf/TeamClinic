@@ -78,15 +78,6 @@ public class title extends AppCompatActivity {
 
         drawerLayout.addDrawerListener(dtToggle);
         dtToggle.syncState();
-
-        Button unityTest=(Button)findViewById(R.id.UnityTest);
-        unityTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),UnityPlayerActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     void buttonInit()
