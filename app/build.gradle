@@ -34,6 +34,7 @@ dependencies {
     compile project(':gvr')
     compile project(':unitygvr')
     testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
     compile files('libs/unity-classes.jar')
     compile files('libs/android-core.jar')
 }
