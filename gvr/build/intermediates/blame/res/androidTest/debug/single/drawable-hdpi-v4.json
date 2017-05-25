@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\transition.png",
+        "source": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\transition.png"
+    },
+    {
+        "merged": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\quantum_ic_settings_white_24.png",
+        "source": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\quantum_ic_settings_white_24.png"
+    },
+    {
+        "merged": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\quantum_ic_close_white_24.png",
+        "source": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\quantum_ic_close_white_24.png"
+    }
+]

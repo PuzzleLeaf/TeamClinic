@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="puzzleleaf.tistory.com.teamclinic">
     <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:hardwareAccelerated="false"
@@ -21,18 +21,26 @@
         <activity android:name=".Splash.Splash" android:screenOrientation="portrait"/>
         <activity android:name=".Review.Review" android:screenOrientation="portrait"/>
         <activity android:name=".Story.Story" android:screenOrientation="portrait"/>
+        <activity android:name=".Story.zero.chapter_zero" android:screenOrientation="portrait"/>
         <activity android:name=".Story.first.chapter_first" android:screenOrientation="portrait"/>
+        <activity android:name=".Story.second.chapter_sec" android:screenOrientation="portrait"/>
+        <activity android:name=".Story.first.contents.chapter_contents" android:screenOrientation="portrait"/>
+        <activity android:name=".Story.Vr_Info" android:screenOrientation="portrait"/>
 
         <activity android:name=".Unity.UnityPlayerActivity"
-            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:screenOrientation="landscape"
             android:launchMode="singleTask"
-            android:process=":unityplayer"
-            android:screenOrientation="fullSensor">
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection"
+            android:process=":unityplayer">
+            <category android:name="android.intent.category.LAUNCHER" />
+            <category android:name="com.google.intent.category.CARDBOARD" />
         </activity>
         <activity android:name=".MainActivity"/>
     </application>
 
     <uses-permission android:name="android.permission.CAMERA" />
-
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
 
 </manifest>

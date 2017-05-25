@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/TeamClinic.iml" filepath="$PROJECT_DIR$/TeamClinic.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gvr/gvr.iml" filepath="$PROJECT_DIR$/gvr/gvr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/unitygvr/unitygvr.iml" filepath="$PROJECT_DIR$/unitygvr/unitygvr.iml" />
     </modules>
   </component>
 </project>

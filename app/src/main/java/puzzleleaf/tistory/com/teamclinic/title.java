@@ -15,13 +15,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import puzzleleaf.tistory.com.teamclinic.Review.Review;
 import puzzleleaf.tistory.com.teamclinic.Splash.Splash;
 import puzzleleaf.tistory.com.teamclinic.Story.Story;
-import puzzleleaf.tistory.com.teamclinic.Unity.UnityPlayerActivity;
 import puzzleleaf.tistory.com.teamclinic.processing.StarTitle;
 
 /**

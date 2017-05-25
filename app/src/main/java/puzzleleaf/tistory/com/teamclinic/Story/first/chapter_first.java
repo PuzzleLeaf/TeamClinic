@@ -22,7 +22,7 @@ public class chapter_first extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_story_first);
+        setContentView(R.layout.activity_story_frame);
         overridePendingTransition(R.anim.anim_slide_in_up_story,R.anim.anim_zero);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
@@ -33,13 +33,13 @@ public class chapter_first extends AppCompatActivity {
 
     void init()
     {
-        first_frame = (LinearLayout) findViewById(R.id.chapter_first_story);
+        first_frame = (LinearLayout) findViewById(R.id.chapter_story);
         first_frame.setBackgroundResource(first_story.getResourceId(story_idx++,-1));
 
         first_frame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(story_idx<26) {
+                if(story_idx<17) {
                     first_frame.setBackgroundResource(first_story.getResourceId(story_idx++, -1));
                 }
                 else

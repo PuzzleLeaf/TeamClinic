@@ -1,0 +1,688 @@
+[
+    {
+        "outputFile": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 56,
+                    "endOffset": 157
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 105,
+                        "endColumn": 56,
+                        "endOffset": 157
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 162,
+                    "endColumn": 53,
+                    "endOffset": 211
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 162,
+                        "endColumn": 53,
+                        "endOffset": 211
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 216,
+                    "endColumn": 54,
+                    "endOffset": 266
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 216,
+                        "endColumn": 54,
+                        "endOffset": 266
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 271,
+                    "endColumn": 57,
+                    "endOffset": 324
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 271,
+                        "endColumn": 57,
+                        "endOffset": 324
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 329,
+                    "endColumn": 61,
+                    "endOffset": 386
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 329,
+                        "endColumn": 61,
+                        "endOffset": 386
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 391,
+                    "endLine": 9,
+                    "endColumn": 11,
+                    "endOffset": 621
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 391,
+                        "endLine": 9,
+                        "endColumn": 11,
+                        "endOffset": 621
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 626,
+                    "endLine": 12,
+                    "endColumn": 13,
+                    "endOffset": 929
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 626,
+                        "endLine": 12,
+                        "endColumn": 13,
+                        "endOffset": 929
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 934,
+                    "endLine": 15,
+                    "endColumn": 11,
+                    "endOffset": 1220
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 934,
+                        "endLine": 15,
+                        "endColumn": 11,
+                        "endOffset": 1220
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1225,
+                    "endLine": 18,
+                    "endColumn": 11,
+                    "endOffset": 1407
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1225,
+                        "endLine": 18,
+                        "endColumn": 11,
+                        "endOffset": 1407
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1412,
+                    "endLine": 21,
+                    "endColumn": 11,
+                    "endOffset": 1748
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1412,
+                        "endLine": 21,
+                        "endColumn": 11,
+                        "endOffset": 1748
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1753,
+                    "endLine": 24,
+                    "endColumn": 13,
+                    "endOffset": 2090
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1753,
+                        "endLine": 24,
+                        "endColumn": 13,
+                        "endOffset": 2090
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2095,
+                    "endLine": 27,
+                    "endColumn": 13,
+                    "endOffset": 2327
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 2095,
+                        "endLine": 27,
+                        "endColumn": 13,
+                        "endOffset": 2327
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2332,
+                    "endLine": 30,
+                    "endColumn": 13,
+                    "endOffset": 2549
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 2332,
+                        "endLine": 30,
+                        "endColumn": 13,
+                        "endOffset": 2549
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2554,
+                    "endLine": 33,
+                    "endColumn": 11,
+                    "endOffset": 2769
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 2554,
+                        "endLine": 33,
+                        "endColumn": 11,
+                        "endOffset": 2769
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2774,
+                    "endLine": 36,
+                    "endColumn": 11,
+                    "endOffset": 3002
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 2774,
+                        "endLine": 36,
+                        "endColumn": 11,
+                        "endOffset": 3002
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 3007,
+                    "endLine": 39,
+                    "endColumn": 11,
+                    "endOffset": 3235
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 3007,
+                        "endLine": 39,
+                        "endColumn": 11,
+                        "endOffset": 3235
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 3240,
+                    "endLine": 42,
+                    "endColumn": 11,
+                    "endOffset": 3370
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 3240,
+                        "endLine": 42,
+                        "endColumn": 11,
+                        "endOffset": 3370
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 3375,
+                    "endLine": 46,
+                    "endColumn": 11,
+                    "endOffset": 3670
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 3375,
+                        "endLine": 46,
+                        "endColumn": 11,
+                        "endOffset": 3670
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 3675,
+                    "endLine": 50,
+                    "endColumn": 11,
+                    "endOffset": 3970
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 3675,
+                        "endLine": 50,
+                        "endColumn": 11,
+                        "endOffset": 3970
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 3975,
+                    "endLine": 53,
+                    "endColumn": 13,
+                    "endOffset": 4280
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 3975,
+                        "endLine": 53,
+                        "endColumn": 13,
+                        "endOffset": 4280
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 4285,
+                    "endLine": 56,
+                    "endColumn": 11,
+                    "endOffset": 4510
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 4285,
+                        "endLine": 56,
+                        "endColumn": 11,
+                        "endOffset": 4510
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 4515,
+                    "endColumn": 206,
+                    "endOffset": 4717
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 4,
+                        "startOffset": 4515,
+                        "endColumn": 206,
+                        "endOffset": 4717
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 4722,
+                    "endLine": 60,
+                    "endColumn": 13,
+                    "endOffset": 4923
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 4722,
+                        "endLine": 60,
+                        "endColumn": 13,
+                        "endOffset": 4923
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 4928,
+                    "endLine": 63,
+                    "endColumn": 13,
+                    "endOffset": 5208
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 4928,
+                        "endLine": 63,
+                        "endColumn": 13,
+                        "endOffset": 5208
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 5213,
+                    "endLine": 66,
+                    "endColumn": 13,
+                    "endOffset": 5533
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 64,
+                        "startColumn": 4,
+                        "startOffset": 5213,
+                        "endLine": 66,
+                        "endColumn": 13,
+                        "endOffset": 5533
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 67,
+                    "startColumn": 4,
+                    "startOffset": 5538,
+                    "endLine": 69,
+                    "endColumn": 11,
+                    "endOffset": 5740
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 4,
+                        "startOffset": 5538,
+                        "endLine": 69,
+                        "endColumn": 11,
+                        "endOffset": 5740
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 70,
+                    "startColumn": 4,
+                    "startOffset": 5745,
+                    "endLine": 72,
+                    "endColumn": 13,
+                    "endOffset": 6043
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 4,
+                        "startOffset": 5745,
+                        "endLine": 72,
+                        "endColumn": 13,
+                        "endOffset": 6043
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 6048,
+                    "endLine": 75,
+                    "endColumn": 13,
+                    "endOffset": 6256
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 6048,
+                        "endLine": 75,
+                        "endColumn": 13,
+                        "endOffset": 6256
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 6261,
+                    "endLine": 78,
+                    "endColumn": 13,
+                    "endOffset": 6451
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 76,
+                        "startColumn": 4,
+                        "startOffset": 6261,
+                        "endLine": 78,
+                        "endColumn": 13,
+                        "endOffset": 6451
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 6456,
+                    "endLine": 81,
+                    "endColumn": 8,
+                    "endOffset": 6614
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 4,
+                        "startOffset": 6456,
+                        "endLine": 81,
+                        "endColumn": 8,
+                        "endOffset": 6614
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 6619,
+                    "endLine": 83,
+                    "endColumn": 8,
+                    "endOffset": 6678
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 82,
+                        "startColumn": 4,
+                        "startOffset": 6619,
+                        "endLine": 83,
+                        "endColumn": 8,
+                        "endOffset": 6678
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 6683,
+                    "endLine": 89,
+                    "endColumn": 8,
+                    "endOffset": 6925
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 4,
+                        "startOffset": 6683,
+                        "endLine": 89,
+                        "endColumn": 8,
+                        "endOffset": 6925
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 6930,
+                    "endLine": 96,
+                    "endColumn": 8,
+                    "endOffset": 7280
+                },
+                "from": {
+                    "file": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 90,
+                        "startColumn": 4,
+                        "startOffset": 6930,
+                        "endLine": 96,
+                        "endColumn": 8,
+                        "endOffset": 7280
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\back_button.xml",
+        "source": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\layout\\back_button.xml"
+    },
+    {
+        "merged": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\settings_button.xml",
+        "source": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\layout\\settings_button.xml"
+    },
+    {
+        "merged": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ui_layer_with_portrait_support.xml",
+        "source": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\layout\\ui_layer_with_portrait_support.xml"
+    },
+    {
+        "merged": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ui_layer.xml",
+        "source": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\layout\\ui_layer.xml"
+    },
+    {
+        "merged": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\transition_view.xml",
+        "source": "C:\\GitProject\\TeamClinic\\gvr\\build\\intermediates\\bundles\\debug\\res\\layout\\transition_view.xml"
+    }
+]

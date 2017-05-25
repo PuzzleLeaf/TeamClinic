@@ -1,17 +1,19 @@
 package puzzleleaf.tistory.com.teamclinic.Story;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import puzzleleaf.tistory.com.teamclinic.R;
 import puzzleleaf.tistory.com.teamclinic.Story.first.chapter_first;
-import puzzleleaf.tistory.com.teamclinic.processing.ReviewTree;
+import puzzleleaf.tistory.com.teamclinic.Story.first.contents.chapter_contents;
+import puzzleleaf.tistory.com.teamclinic.Story.second.chapter_sec;
+import puzzleleaf.tistory.com.teamclinic.Story.zero.chapter_zero;
 
 
 public class Story extends AppCompatActivity {
@@ -33,7 +35,7 @@ public class Story extends AppCompatActivity {
         zero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),chapter_first.class);
+                Intent intent = new Intent(getApplicationContext(),chapter_zero.class);
                 startActivity(intent);
             }
         });
@@ -46,19 +48,79 @@ public class Story extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        LinearLayout first_info = (LinearLayout)findViewById(R.id.chapter_first_contents_start);
+        first_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),chapter_contents.class );
+                intent.putExtra("content",1);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout first_vr = (LinearLayout)findViewById(R.id.chapter_first_contents_vr);
+        first_vr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
+                startActivity(intent);
+            }
+        });
+
+
         ImageView second = (ImageView)findViewById(R.id.chapter_sec);
         second.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),chapter_sec.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout sec_info = (LinearLayout)findViewById(R.id.chapter_sec_contents_start);
+        sec_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),chapter_contents.class );
+                intent.putExtra("content",2);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout sec_vr = (LinearLayout)findViewById(R.id.chapter_sec_contents_vr);
+        sec_vr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView third = (ImageView)findViewById(R.id.chapter_thr);
+        third.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),chapter_first.class);
                 startActivity(intent);
             }
         });
-        ImageView third = (ImageView)findViewById(R.id.chapter_thr);
-        third.setOnClickListener(new View.OnClickListener() {
+
+        LinearLayout thr_info = (LinearLayout)findViewById(R.id.chapter_thr_contents_start);
+        thr_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),chapter_first.class);
+                Intent intent = new Intent(getApplicationContext(),chapter_contents.class );
+                intent.putExtra("content",3);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout thr_vr = (LinearLayout)findViewById(R.id.chapter_thr_contents_vr);
+        thr_vr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
                 startActivity(intent);
             }
         });

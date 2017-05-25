@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
+    <array name="chapter_zero">
+        <item>@drawable/chapter_zero_a</item>
+        <item>@drawable/chapter_zero_b</item>
+        <item>@drawable/chapter_zero_c</item>
+        <item>@drawable/chapter_zero_d</item>
+        <item>@drawable/chapter_zero_e</item>
+        <item>@drawable/chapter_zero_f</item>
+    </array>
+
     <array name="chapter_first">
         <item>@drawable/chapter_first_a</item>
         <item>@drawable/chapter_first_b</item>
@@ -19,15 +28,18 @@
         <item>@drawable/chapter_first_o</item>
         <item>@drawable/chapter_first_p</item>
         <item>@drawable/chapter_first_q</item>
-        <item>@drawable/chapter_first_r</item>
-        <item>@drawable/chapter_first_s</item>
-        <item>@drawable/chapter_first_t</item>
-        <item>@drawable/chapter_first_u</item>
-        <item>@drawable/chapter_first_v</item>
-        <item>@drawable/chapter_first_w</item>
-        <item>@drawable/chapter_first_x</item>
-        <item>@drawable/chapter_first_y</item>
-        <item>@drawable/chapter_first_z</item>
     </array>
 
+    <array name="chapter_sec">
+        <item>@drawable/chapter_sec_a</item>
+        <item>@drawable/chapter_sec_b</item>
+        <item>@drawable/chapter_sec_c</item>
+        <item>@drawable/chapter_sec_d</item>
+        <item>@drawable/chapter_sec_e</item>
+        <item>@drawable/chapter_sec_f</item>
+        <item>@drawable/chapter_sec_g</item>
+        <item>@drawable/chapter_sec_h</item>
+        <item>@drawable/chapter_sec_i</item>
+        <item>@drawable/chapter_sec_j</item>
+    </array>
 </resources>

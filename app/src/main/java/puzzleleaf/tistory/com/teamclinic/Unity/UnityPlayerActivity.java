@@ -62,6 +62,23 @@ public class UnityPlayerActivity extends Activity
 		mUnityPlayer.windowFocusChanged(hasFocus);
 	}
 
+	// Low Memory Unity
+	@Override public void onLowMemory()
+	{
+		super.onLowMemory();
+		mUnityPlayer.lowMemory();
+	}
+
+	// Trim Memory Unity
+	@Override public void onTrimMemory(int level)
+	{
+		super.onTrimMemory(level);
+		if (level == TRIM_MEMORY_RUNNING_CRITICAL)
+		{
+			mUnityPlayer.lowMemory();
+		}
+	}
+
 	// For some reason the multiple keyevent type is not supported by the ndk.
 	// Force event injection by overriding dispatchKeyEvent().
 	@Override public boolean dispatchKeyEvent(KeyEvent event)
