@@ -19,8 +19,8 @@
  <br>
 </p>
 
-
 <p align="center">
   <img src="img/menu.png">
-  <img src="img/animation.gif">
+
 </p>
+
