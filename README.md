@@ -66,6 +66,9 @@
 <p align="center">
   <img src="img/VRInfo.png"><br>
   <b>[VR콘텐츠 관련 주의사항 안내]</b>
+  <br><br>
+  <img src="img/VRContents.gif"><br>
+  <b>[VR콘텐츠 실행]</b>
 </p>
 <br>
 <p>
