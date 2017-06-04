@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "262420103122",
+    "firebase_url": "https://teamclinic-61c23.firebaseio.com",
+    "project_id": "teamclinic-61c23",
+    "storage_bucket": "teamclinic-61c23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262420103122:android:62c4cefbc8708ea7",
+        "android_client_info": {
+          "package_name": "puzzleleaf.tistory.com.teamclinic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262420103122-uf25t7m3cidknpu00nthhvptor042mkd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "puzzleleaf.tistory.com.teamclinic",
+            "certificate_hash": "29b46d99cbed809091a3ead383e285d0946fbfc6"
+          }
+        },
+        {
+          "client_id": "262420103122-1n2rbvabndmaq0u3noevuia8unvag6dg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtf4STjT7iwIv1KG7jEvygWgP-q5Whn1U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262420103122-1n2rbvabndmaq0u3noevuia8unvag6dg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

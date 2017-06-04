@@ -52,10 +52,24 @@ public class StarTitle extends PApplet {
 
         for(int i=0;i<starLimit;i++)
         {
-            if((i+1)%(starLimit/5)==0)
-                drop.display();
-            myStar[i].shine();
-            myStar[i].display();
+
+            if(i%starLimit/8==0)
+            {
+                myStar[i].myStar();
+                myStar[i].myDisplay();
+
+            }
+            else if(i%starLimit/5==0)
+            {
+                myStar[i].drop();
+                myStar[i].dropDisplay();
+
+            }
+            else
+            {
+                myStar[i].shine();
+                myStar[i].display();
+            }
         }
     }
 
@@ -69,7 +83,7 @@ public class StarTitle extends PApplet {
     {
         PVector location;
         PVector vel;
-        float temp = random(1,5);
+        float temp = random(5,10);
         float size = 4;
 
         Drop()
@@ -114,20 +128,26 @@ public class StarTitle extends PApplet {
         }
     }
     //별 객체
+    //
     class Star
     {
-        float xpos, ypos;
         PVector location;
         float brightness;
         float starSize;
         float light;
-
+        PVector myStarLoc[] = new PVector[4];
+        float dropSpeed = random(10,17);
 
         Star()
         {
             noStroke();
             location = new PVector(random(width),random(height-height/5));
             starSize = random(3,7);
+            for(int i =0;i<4;i++)
+            {
+                myStarLoc[i] = new PVector(random(location.x-50,location.x+50),
+                        random(location.y-50,location.y+50));
+            }
             light = random(3,7);
             brightness =30;
         }
@@ -146,9 +166,8 @@ public class StarTitle extends PApplet {
         void shine()
         {
             if(brightness>255){
-                brightness =255;
+                brightness = 255;
                 light = random(-3,-7);
-
             }
             if(brightness<0)
             {
@@ -163,15 +182,66 @@ public class StarTitle extends PApplet {
 
         void drop()
         {
-            if((int)random(1,100)%66==0)
+            if(location.x >width || location.y>height-height/5)
             {
-                PVector acc = new PVector(10,200);
-                location.add(acc);
-
+                location.x = 0;
+                location.y = random(height-height/5);
+                dropSpeed = random(10,16);
             }
+            location.x+=dropSpeed;
+            location.y+=dropSpeed;
 
-            if(location.x>width)
-                location = new PVector(random(width),random(height-height/8));
+        }
+
+        void dropDisplay()
+        {
+            fill(255);
+            ellipse(location.x,location.y,starSize,starSize);
+        }
+
+        //별자리
+        void myDisplay()
+        {
+            fill(255,brightness);
+            pushMatrix();
+            stroke(255,brightness);
+            ellipse(location.x,location.y,starSize,starSize);
+            line(location.x,location.y,myStarLoc[0].x,myStarLoc[0].y);
+            ellipse(myStarLoc[0].x,myStarLoc[0].y,starSize,starSize);
+            line(location.x,location.y,myStarLoc[1].x,myStarLoc[1].y);
+            ellipse(myStarLoc[1].x,myStarLoc[1].y,starSize,starSize);
+            line(myStarLoc[1].x,myStarLoc[1].y,myStarLoc[2].x,myStarLoc[2].y);
+            ellipse(myStarLoc[2].x,myStarLoc[2].y,starSize,starSize);
+            line(myStarLoc[2].x,myStarLoc[2].y,myStarLoc[3].x,myStarLoc[3].y);
+            ellipse(myStarLoc[3].x,myStarLoc[3].y,starSize,starSize);
+            popMatrix();
+            noStroke();
+        }
+
+        void myStar()
+        {
+            if(brightness>255){
+                brightness =255;
+                light = random(-1,-7);
+            }
+            if(brightness<0)
+            {
+                location = new PVector(random(width),random(height-height/5));
+                for(int i =0;i<4;i++)
+                {
+                    myStarLoc[i] = new PVector(random(location.x-50,location.x+50),
+                            random(location.y-50,location.y+50));
+                }
+                light = random(1,7);
+                starSize =  random(3,7);
+                brightness =0 ;
+            }
+            brightness +=light;
+            for(int i =0;i<4;i++)
+            {
+                myStarLoc[i].x += noise(1)*random(-2,2);
+                myStarLoc[i].y += noise(1)*random(-2,2);
+            }
         }
 
     }

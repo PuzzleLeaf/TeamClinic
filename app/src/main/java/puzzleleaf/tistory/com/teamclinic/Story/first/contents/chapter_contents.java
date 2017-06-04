@@ -48,6 +48,9 @@ public class chapter_contents extends AppCompatActivity {
         else if(contentValue==2)
         {
             res.add(R.drawable.chapter_sec_content_a);
+            res.add(R.drawable.chapter_sec_content_b);
+            res.add(R.drawable.chapter_sec_content_c);
+            res.add(R.drawable.chapter_sec_content_d);
         }
         else
         {

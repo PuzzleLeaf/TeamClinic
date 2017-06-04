@@ -10,6 +10,13 @@
         <item>@drawable/chapter_zero_f</item>
     </array>
 
+    <array name="trees">
+        <item>@drawable/tree1</item>
+        <item>@drawable/tree2</item>
+        <item>@drawable/tree3</item>
+        <item>@drawable/tree4</item>
+        <item>@drawable/tree5</item>
+    </array>
     <array name="chapter_first">
         <item>@drawable/chapter_first_a</item>
         <item>@drawable/chapter_first_b</item>

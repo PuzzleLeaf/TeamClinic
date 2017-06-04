@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07141d">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="댓  글"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="댓글 작성"
+                android:textColorHint="#d2d2d2"
+                android:textColor="#ffffff"
+                android:id="@+id/reply_edt"
+                android:layout_weight="10"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/white_btn"
+                android:layout_marginRight="3dp"
+                android:text="등록"
+                android:textColor="#ffffff"
+                android:id="@+id/reply_btn"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reply_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

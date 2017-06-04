@@ -21,6 +21,7 @@ import puzzleleaf.tistory.com.teamclinic.Review.Review;
 import puzzleleaf.tistory.com.teamclinic.Splash.Splash;
 import puzzleleaf.tistory.com.teamclinic.Story.Story;
 import puzzleleaf.tistory.com.teamclinic.processing.StarTitle;
+import puzzleleaf.tistory.com.teamclinic.setting.Setting;
 
 /**
  * Created by cmtyx on 2017-04-08.
@@ -58,6 +59,7 @@ public class title extends AppCompatActivity {
     void init()
     {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("");
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         setSupportActionBar(toolbar);
         dtToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name) {
@@ -94,6 +96,15 @@ public class title extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Review.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView settingBtn = (ImageView) findViewById(R.id.setting);
+        settingBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Setting.class);
                 startActivity(intent);
             }
         });

@@ -25,7 +25,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:textColor="#ffffff"
-            android:text="Hello"/>
+            android:text="O"/>
 
     </LinearLayout>
 </LinearLayout>
