@@ -1,4 +1,4 @@
-package puzzleleaf.tistory.com.teamclinic.Story.first.contents;
+package puzzleleaf.tistory.com.teamclinic.Story.contents;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,9 +1,11 @@
 package puzzleleaf.tistory.com.teamclinic.Unity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.Window;
@@ -14,17 +16,21 @@ public class UnityPlayerActivity extends Activity
 {
 	protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
 
+	String contents = "1";
 	// Setup activity layout
 	@Override protected void onCreate (Bundle savedInstanceState)
 	{
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
-
 		getWindow().setFormat(PixelFormat.RGBX_8888); // <--- This makes xperia play happy
+		Intent intent = getIntent();
+		contents = intent.getExtras().getString("contents");
+		Log.d("qwe",contents);
 
 		mUnityPlayer = new UnityPlayer(this);
 		setContentView(mUnityPlayer);
 		mUnityPlayer.requestFocus();
+		UnityPlayer.UnitySendMessage("","AndroidToUnity",contents);
 	}
 
 	// Quit Unity

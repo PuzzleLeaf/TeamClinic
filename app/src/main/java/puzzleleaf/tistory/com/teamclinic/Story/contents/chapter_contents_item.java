@@ -1,4 +1,4 @@
-package puzzleleaf.tistory.com.teamclinic.Story.first.contents;
+package puzzleleaf.tistory.com.teamclinic.Story.contents;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;

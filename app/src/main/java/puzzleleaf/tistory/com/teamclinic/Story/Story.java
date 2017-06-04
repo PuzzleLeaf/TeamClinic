@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 
 import puzzleleaf.tistory.com.teamclinic.R;
 import puzzleleaf.tistory.com.teamclinic.Story.first.chapter_first;
-import puzzleleaf.tistory.com.teamclinic.Story.first.contents.chapter_contents;
+import puzzleleaf.tistory.com.teamclinic.Story.contents.chapter_contents;
 import puzzleleaf.tistory.com.teamclinic.Story.second.chapter_sec;
 import puzzleleaf.tistory.com.teamclinic.Story.zero.chapter_zero;
 
@@ -54,7 +54,6 @@ public class Story extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),chapter_contents.class );
-                intent.putExtra("content",1);
                 startActivity(intent);
             }
         });
@@ -64,6 +63,7 @@ public class Story extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
+                intent.putExtra("contents","1");
                 startActivity(intent);
             }
         });
@@ -83,7 +83,6 @@ public class Story extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),chapter_contents.class );
-                intent.putExtra("content",2);
                 startActivity(intent);
             }
         });
@@ -93,6 +92,7 @@ public class Story extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
+                intent.putExtra("contents","2");
                 startActivity(intent);
             }
         });
@@ -111,7 +111,6 @@ public class Story extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),chapter_contents.class );
-                intent.putExtra("content",3);
                 startActivity(intent);
             }
         });
@@ -121,6 +120,7 @@ public class Story extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
+                intent.putExtra("contents","3");
                 startActivity(intent);
             }
         });

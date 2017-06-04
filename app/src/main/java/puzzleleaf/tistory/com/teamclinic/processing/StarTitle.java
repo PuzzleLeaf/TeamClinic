@@ -14,6 +14,8 @@ public class StarTitle extends PApplet {
     PImage starBg;
     PImage land;
     Woman woman;
+    Man_first man_first;
+    Man_second man_second;
 
     //별 개수
     int starNum = 300;
@@ -37,6 +39,8 @@ public class StarTitle extends PApplet {
         starBg.resize(width,height);
 
         woman = new Woman();
+        man_first = new Man_first();
+        man_second = new Man_second();
         //별똥별
         drop = new Drop();
         for(int i=0;i<starNum;i++)
@@ -48,18 +52,18 @@ public class StarTitle extends PApplet {
     {
         image(starBg,width/2,height/2);
         woman.display(width/2,height-height/8);
+        man_first.display(width/2-100,height-height/8);
+        man_second.display(width/2+100,height-height/8);
         image(land,width/2,height-height/20);
 
         for(int i=0;i<starLimit;i++)
         {
-
-            if(i%starLimit/8==0)
+            if(i==1 || i== 3|| i==5 || i==9 || i == 15)
             {
                 myStar[i].myStar();
                 myStar[i].myDisplay();
-
             }
-            else if(i%starLimit/5==0)
+            else if(i==11 || i==7)
             {
                 myStar[i].drop();
                 myStar[i].dropDisplay();
@@ -127,6 +131,34 @@ public class StarTitle extends PApplet {
             image(woman,x,y);
         }
     }
+    class Man_first  {
+        PImage man;
+
+        Man_first()
+        {
+            man = loadImage("man1.png");
+            man.resize((int)width/10,(int)(width/10*1.5));
+        }
+
+        void display(float x, float y)
+        {
+            image(man,x,y);
+        }
+    }
+    class Man_second  {
+        PImage man;
+
+        Man_second()
+        {
+            man = loadImage("man2.png");
+            man.resize((int)width/10,(int)(width/10*1.5));
+        }
+
+        void display(float x, float y)
+        {
+            image(man,x,y);
+        }
+    }
     //별 객체
     //
     class Star
@@ -184,8 +216,8 @@ public class StarTitle extends PApplet {
         {
             if(location.x >width || location.y>height-height/5)
             {
-                location.x = 0;
-                location.y = random(height-height/5);
+                location.x = random(width);
+                location.y = random(height/2);
                 dropSpeed = random(10,16);
             }
             location.x+=dropSpeed;

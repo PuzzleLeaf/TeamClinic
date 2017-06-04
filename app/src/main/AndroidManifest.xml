@@ -35,7 +35,7 @@
         <activity android:name=".Story.zero.chapter_zero" android:screenOrientation="portrait"/>
         <activity android:name=".Story.first.chapter_first" android:screenOrientation="portrait"/>
         <activity android:name=".Story.second.chapter_sec" android:screenOrientation="portrait"/>
-        <activity android:name=".Story.first.contents.chapter_contents" android:screenOrientation="portrait"/>
+        <activity android:name=".Story.contents.chapter_contents" android:screenOrientation="portrait"/>
         <activity android:name=".Story.Vr_Info" android:screenOrientation="portrait"/>
 
         <activity android:name=".Unity.UnityPlayerActivity"
