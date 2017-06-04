@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -16,22 +18,30 @@ public class UnityPlayerActivity extends Activity
 {
 	protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
 
-	String contents = "1";
+	String contents = "2";
 	// Setup activity layout
 	@Override protected void onCreate (Bundle savedInstanceState)
 	{
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
 		getWindow().setFormat(PixelFormat.RGBX_8888); // <--- This makes xperia play happy
+
 		Intent intent = getIntent();
 		contents = intent.getExtras().getString("contents");
-		Log.d("qwe",contents);
 
 		mUnityPlayer = new UnityPlayer(this);
 		setContentView(mUnityPlayer);
 		mUnityPlayer.requestFocus();
-		UnityPlayer.UnitySendMessage("","AndroidToUnity",contents);
+		handler.sendEmptyMessageDelayed(0,9000);
 	}
+
+
+	final Handler handler = new Handler(){
+		@Override
+		public void handleMessage(Message msg) {
+			UnityPlayer.UnitySendMessage("Manager","AndroidToUnity",contents);
+		}
+	};
 
 	// Quit Unity
 	@Override protected void onDestroy ()
@@ -95,7 +105,8 @@ public class UnityPlayerActivity extends Activity
 	}
 
 	// Pass any events not handled by (unfocused) views straight to UnityPlayer
-	@Override public boolean onKeyUp(int keyCode, KeyEvent event)     { return mUnityPlayer.injectEvent(event); }
+	@Override public boolean onKeyUp(int keyCode, KeyEvent event)
+	{ return mUnityPlayer.injectEvent(event); }
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if(keyCode == KeyEvent.KEYCODE_BACK) {
 			mUnityPlayer.quit();
@@ -103,6 +114,8 @@ public class UnityPlayerActivity extends Activity
 		} else
 			return false;
 	}
-	@Override public boolean onTouchEvent(MotionEvent event)          { return mUnityPlayer.injectEvent(event); }
+	@Override public boolean onTouchEvent(MotionEvent event)          {
+		return mUnityPlayer.injectEvent(event);
+	}
 	/*API12*/ public boolean onGenericMotionEvent(MotionEvent event)  { return mUnityPlayer.injectEvent(event); }
 }

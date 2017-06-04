@@ -63,7 +63,7 @@ public class Story extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
-                intent.putExtra("contents","1");
+                intent.putExtra("contents","2");
                 startActivity(intent);
             }
         });
@@ -92,7 +92,7 @@ public class Story extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
-                intent.putExtra("contents","2");
+                intent.putExtra("contents","1");//시각이 1번
                 startActivity(intent);
             }
         });
