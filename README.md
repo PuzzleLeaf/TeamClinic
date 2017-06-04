@@ -74,7 +74,8 @@
 <p>
 <b>개발이슈</b><br>
 <b>[1]</b> 유니티 프로젝트와 안드로이드 스튜디오에서 연동하기 <a href="http://puzzleleaf.tistory.com/111">[링크]</a><br>
-<b>[2]</b> 카드보드 VR 라이브러리의 duplicate entry 에러 해결하기<a href="http://puzzleleaf.tistory.com/111">[링크]</a><br>
+<b>[2]</b> 카드보드 VR 라이브러리의 duplicate entry 에러 해결하기<a href="http://puzzleleaf.tistory.com/126">[링크]</a><br>
+<b>[3]</b> 안드로이드에서 유니티로 값 전달하기 <a href="http://puzzleleaf.tistory.com/131">[링크]</a><br>
 <b>[3]</b> 기타 개발 진행상황 <a href="http://puzzleleaf.tistory.com/category/Android%20Project/%239%20%EC%A2%85%ED%95%A9%20%EC%84%A4%EA%B3%84">[링크]</a><br>
 </p>
  
