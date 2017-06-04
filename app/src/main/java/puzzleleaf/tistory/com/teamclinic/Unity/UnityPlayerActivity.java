@@ -18,7 +18,7 @@ public class UnityPlayerActivity extends Activity
 {
 	protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
 
-	String contents = "2";
+	String contents = "1";
 	// Setup activity layout
 	@Override protected void onCreate (Bundle savedInstanceState)
 	{
@@ -107,6 +107,7 @@ public class UnityPlayerActivity extends Activity
 	// Pass any events not handled by (unfocused) views straight to UnityPlayer
 	@Override public boolean onKeyUp(int keyCode, KeyEvent event)
 	{ return mUnityPlayer.injectEvent(event); }
+
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if(keyCode == KeyEvent.KEYCODE_BACK) {
 			mUnityPlayer.quit();
@@ -114,8 +115,10 @@ public class UnityPlayerActivity extends Activity
 		} else
 			return false;
 	}
-	@Override public boolean onTouchEvent(MotionEvent event)          {
+
+	@Override public boolean onTouchEvent(MotionEvent event){
 		return mUnityPlayer.injectEvent(event);
 	}
+
 	/*API12*/ public boolean onGenericMotionEvent(MotionEvent event)  { return mUnityPlayer.injectEvent(event); }
 }

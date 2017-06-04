@@ -2,25 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
     android:gravity="bottom"
+    android:background="#000000"
     android:orientation="vertical">
-    <LinearLayout
+    <ImageView
+        android:id="@+id/vr_info_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/vr_info"/>
-    </LinearLayout>
+        android:src="@drawable/vr_info" />
     <Button
         android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:background="#191919"
         android:text="시작하기"
         android:id="@+id/start_vr"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        android:layout_height="40dp" />
-
+         />
 </LinearLayout>

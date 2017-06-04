@@ -31,13 +31,15 @@
         <activity android:name=".Splash.Splash" android:screenOrientation="portrait"/>
         <activity android:name=".Review.Review" android:screenOrientation="portrait"/>
         <activity android:name=".setting.Setting" android:screenOrientation="portrait"/>
+        <activity android:name=".Story.three.chapter_final" android:screenOrientation="portrait"/>
         <activity android:name=".Story.Story" android:screenOrientation="portrait"/>
         <activity android:name=".Story.zero.chapter_zero" android:screenOrientation="portrait"/>
         <activity android:name=".Story.first.chapter_first" android:screenOrientation="portrait"/>
         <activity android:name=".Story.second.chapter_sec" android:screenOrientation="portrait"/>
+        <activity android:name=".Story.three.chapter_thr" android:screenOrientation="portrait"/>
         <activity android:name=".Story.contents.chapter_contents" android:screenOrientation="portrait"/>
         <activity android:name=".Story.Vr_Info" android:screenOrientation="portrait"/>
-
+        <activity android:name=".help.Help" android:screenOrientation="portrait"/>
         <activity android:name=".Unity.UnityPlayerActivity"
             android:screenOrientation="landscape"
             android:launchMode="singleTask"

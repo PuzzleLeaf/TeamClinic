@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07141d"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="해피빈 후원"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="청각장애 후원"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="듣지 못하는 아이들을 위한 보청기 지원, 청각장애 연주단을 위한 모금활동, 청각장애 어린이들의 인공달팽이관 수술지원 등 많은 분들이 여러분들의 도음을 기다리고 있습니다."/>
+     <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:text="후원하기"
+            android:textColor="#ffffff"
+            android:id="@+id/help1"
+            android:textStyle="bold"
+            android:background="@drawable/white_btn"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="시각장애 후원"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시각장애학생들을 위한 프로젝트, 시각장애인 복지관의 활동 격려, 시각장애 아동을 위한 점자교본 제작 등 많은 분들이 여러분들의 도움을 기다리고 있습니다." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/help2"
+            android:background="@drawable/white_btn"
+            android:text="후원하기"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="정신장애 후원"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정신장애 인식 개선을 위한 캠페인, 발달장애인들의 문화체험 프로그램, 발달장애 아동을 위한 복지환경 개선 등 많은 분들이 여러분들의 도움을 기다리고 있습니다. " />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/help3"
+            android:text="후원하기"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/white_btn"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="기타 후원"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인권 및 인식개선, 환경과 동물, 지구촌 나눔, 아이들에게 희망을 나누는 프로그램 등 다양한 분야의 나눔이 있습니다. " />
+
+        <Button
+            android:id="@+id/help4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_btn"
+            android:text="참여하기"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

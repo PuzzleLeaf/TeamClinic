@@ -9,6 +9,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import puzzleleaf.tistory.com.teamclinic.R;
+import puzzleleaf.tistory.com.teamclinic.Story.Vr_Info;
 import puzzleleaf.tistory.com.teamclinic.Unity.UnityPlayerActivity;
 
 
@@ -39,12 +40,13 @@ public class chapter_sec extends AppCompatActivity {
         second_frame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(story_idx<9) {
+                if(story_idx<10) {
                     second_frame.setBackgroundResource(second_story.getResourceId(story_idx++, -1));
                 }
                 else
                 {
-                    Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
+                    intent.putExtra("contents","1");
                     startActivity(intent);
                     finish();
                 }

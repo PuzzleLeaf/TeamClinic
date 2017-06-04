@@ -63,12 +63,6 @@ public class StarTitle extends PApplet {
                 myStar[i].myStar();
                 myStar[i].myDisplay();
             }
-            else if(i==11 || i==7)
-            {
-                myStar[i].drop();
-                myStar[i].dropDisplay();
-
-            }
             else
             {
                 myStar[i].shine();

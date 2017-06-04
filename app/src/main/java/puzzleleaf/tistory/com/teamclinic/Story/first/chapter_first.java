@@ -9,6 +9,7 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import puzzleleaf.tistory.com.teamclinic.R;
+import puzzleleaf.tistory.com.teamclinic.Story.Vr_Info;
 import puzzleleaf.tistory.com.teamclinic.Unity.UnityPlayerActivity;
 
 
@@ -44,7 +45,8 @@ public class chapter_first extends AppCompatActivity {
                 }
                 else
                 {
-                    Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
+                    intent.putExtra("contents","2");
                     startActivity(intent);
                     finish();
                 }

@@ -9,7 +9,6 @@
         <item>@drawable/chapter_zero_e</item>
         <item>@drawable/chapter_zero_f</item>
     </array>
-
     <array name="trees">
         <item>@drawable/tree1</item>
         <item>@drawable/tree2</item>
@@ -36,7 +35,6 @@
         <item>@drawable/chapter_first_p</item>
         <item>@drawable/chapter_first_q</item>
     </array>
-
     <array name="chapter_sec">
         <item>@drawable/chapter_sec_a</item>
         <item>@drawable/chapter_sec_b</item>
@@ -48,5 +46,26 @@
         <item>@drawable/chapter_sec_h</item>
         <item>@drawable/chapter_sec_i</item>
         <item>@drawable/chapter_sec_j</item>
+        <item>@drawable/chapter_sec_k</item>
     </array>
+    <array name="chapter_thr1">
+        <item>@drawable/chapter_thr_a</item>
+        <item>@drawable/chapter_thr_b</item>
+        <item>@drawable/chapter_thr_c</item>
+        <item>@drawable/chapter_thr_d</item>
+        <item>@drawable/chapter_thr_e</item>
+        <item>@drawable/chapter_thr_f</item>
+        <item>@drawable/chapter_thr_g</item>
+        <item>@drawable/chapter_thr_h</item>
+        <item>@drawable/chapter_thr_i</item>
+        <item>@drawable/chapter_thr_j</item>
+        <item>@drawable/chapter_thr_k</item>
+        <item>@drawable/chapter_thr_l</item>
+        <item>@drawable/chapter_thr_m</item>
+        <item>@drawable/chapter_thr_n</item>
+        <item>@drawable/chapter_thr_o</item>
+        <item>@drawable/chapter_thr_p</item>
+        <item>@drawable/chapter_thr_q</item>
+    </array>
+
 </resources>

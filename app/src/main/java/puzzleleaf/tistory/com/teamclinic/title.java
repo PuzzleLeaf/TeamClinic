@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import puzzleleaf.tistory.com.teamclinic.Review.Review;
 import puzzleleaf.tistory.com.teamclinic.Splash.Splash;
 import puzzleleaf.tistory.com.teamclinic.Story.Story;
+import puzzleleaf.tistory.com.teamclinic.help.Help;
 import puzzleleaf.tistory.com.teamclinic.processing.StarTitle;
 import puzzleleaf.tistory.com.teamclinic.setting.Setting;
 
@@ -96,6 +97,15 @@ public class title extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Review.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView helpBtn = (ImageView) findViewById(R.id.reward);
+        helpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Help.class);
                 startActivity(intent);
             }
         });
