@@ -40,7 +40,7 @@ public class chapter_sec extends AppCompatActivity {
         second_frame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(story_idx<10) {
+                if(story_idx<11) {
                     second_frame.setBackgroundResource(second_story.getResourceId(story_idx++, -1));
                 }
                 else

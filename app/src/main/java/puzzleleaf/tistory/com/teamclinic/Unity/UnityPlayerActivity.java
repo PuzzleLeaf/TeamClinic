@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.PixelFormat;
+import android.inputmethodservice.Keyboard;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -37,11 +39,12 @@ public class UnityPlayerActivity extends Activity
 
 
 	final Handler handler = new Handler(){
-		@Override
-		public void handleMessage(Message msg) {
-			UnityPlayer.UnitySendMessage("Manager","AndroidToUnity",contents);
-		}
-	};
+	@Override
+	public void handleMessage(Message msg) {
+		UnityPlayer.UnitySendMessage("Manager","AndroidToUnity",contents);
+	}
+};
+
 
 	// Quit Unity
 	@Override protected void onDestroy ()
@@ -104,6 +107,7 @@ public class UnityPlayerActivity extends Activity
 		return super.dispatchKeyEvent(event);
 	}
 
+
 	// Pass any events not handled by (unfocused) views straight to UnityPlayer
 	@Override public boolean onKeyUp(int keyCode, KeyEvent event)
 	{ return mUnityPlayer.injectEvent(event); }
@@ -112,8 +116,10 @@ public class UnityPlayerActivity extends Activity
 		if(keyCode == KeyEvent.KEYCODE_BACK) {
 			mUnityPlayer.quit();
 			return true;
-		} else
+		}
+		else{
 			return false;
+		}
 	}
 
 	@Override public boolean onTouchEvent(MotionEvent event){
