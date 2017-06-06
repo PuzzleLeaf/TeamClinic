@@ -64,11 +64,22 @@
 </p>
 <br>
 <p align="center">
-  <img src="img/VRInfo.png"><br>
-  <b>[VR콘텐츠 관련 주의사항 안내]</b>
-  <br><br>
+  <img src="img/VRInfo.png">
   <img src="img/VRContents.gif"><br>
-  <b>[VR콘텐츠 실행]</b>
+  <b>[VR콘텐츠 관련 주의사항 안내 및 실행]</b>
+</p>
+<br>
+<p>
+<b>[정신장애 체험 콘텐츠]</b><br>
+학교를 배경으로 청각 과민성 자폐 질환을 체험해보게 됩니다. <br>
+다른 사람에게 다가가는 경우 주변의 소리와 시야가 정상적인 활동이 불가능할 정도로 외곡되는 질환 입니다.<br>
+특정 인물을 찾게되면 체험이 종료됩니다.<br>
+<br>
+</p>
+<p align="center">
+  <img src="img/thr1.png">
+  <img src="img/thr2.png"><br>
+  <b>[정신장애체험]</b>
 </p>
 <br>
 <p>
