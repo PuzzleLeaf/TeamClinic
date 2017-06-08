@@ -9,8 +9,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import puzzleleaf.tistory.com.teamclinic.R;
+import puzzleleaf.tistory.com.teamclinic.Review.Review;
 import puzzleleaf.tistory.com.teamclinic.Story.Vr_Info;
 import puzzleleaf.tistory.com.teamclinic.processing.StarEnd;
 import puzzleleaf.tistory.com.teamclinic.processing.StarTitle;
@@ -43,5 +45,13 @@ public class chapter_final extends AppCompatActivity {
         super.onPause();
         overridePendingTransition(0,R.anim.anim_slide_out_up);
         
+    }
+
+    @Override
+    protected void onDestroy() {
+        Intent intent = new Intent(getApplicationContext(), Review.class);
+        Toast.makeText(getApplicationContext(),"체험을 진행한 후의 느낌을 한 줄로 나타낸다면?",Toast.LENGTH_LONG).show();
+        startActivity(intent);
+        super.onDestroy();
     }
 }

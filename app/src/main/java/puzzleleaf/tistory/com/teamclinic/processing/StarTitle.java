@@ -1,5 +1,9 @@
 package puzzleleaf.tistory.com.teamclinic.processing;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.util.Log;
+
 import processing.core.PApplet;
 import processing.core.PImage;
 import processing.core.PVector;
@@ -17,13 +21,12 @@ public class StarTitle extends PApplet {
     Man_first man_first;
     Man_second man_second;
 
+    float moonLight = 0;
     //별 개수
     int starNum = 300;
     int starLimit = 50;
 
     Star myStar[] = new Star[starNum];
-
-    Drop drop;
 
     public void settings() {
         fullScreen();
@@ -41,8 +44,7 @@ public class StarTitle extends PApplet {
         woman = new Woman();
         man_first = new Man_first();
         man_second = new Man_second();
-        //별똥별
-        drop = new Drop();
+
         for(int i=0;i<starNum;i++)
             myStar[i] = new Star();
     }
@@ -52,23 +54,17 @@ public class StarTitle extends PApplet {
     {
         image(starBg,width/2,height/2);
         woman.display(width/2,height-height/8);
-        man_first.display(width/2-100,height-height/8);
-        man_second.display(width/2+100,height-height/8);
+        if(StageData.stageNum>1)
+            man_first.display(width/2-100,height-height/8);
+        if(StageData.stageNum>2)
+            man_second.display(width/2+100,height-height/8);
         image(land,width/2,height-height/20);
 
-        for(int i=0;i<starLimit;i++)
-        {
-            if(i==1 || i== 3|| i==5 || i==9 || i == 15)
-            {
-                myStar[i].myStar();
-                myStar[i].myDisplay();
-            }
-            else
-            {
-                myStar[i].shine();
-                myStar[i].display();
-            }
-        }
+        Log.d("qwe","초당 프레임 : "+String.valueOf(frameRate));
+        if(StageData.stageNum>=3)
+            moonDisplay();
+
+        starDisplay();
     }
 
     public void mouseReleased()
@@ -77,39 +73,56 @@ public class StarTitle extends PApplet {
             starLimit+=25;
     }
 
-    class Drop
+
+    //별
+    void starDisplay()
     {
-        PVector location;
-        PVector vel;
-        float temp = random(5,10);
-        float size = 4;
-
-        Drop()
+        for(int i=0;i<starLimit;i++)
         {
-            location = new PVector(80,80);
-            vel = new PVector(temp,temp);
-        }
-
-        void display()
-        {
-            fill(255);
-            location.add(vel);
-            ellipse(location.x,location.y,size,size);
-            for(int i=(int)size*3;i>0;i--)
+            if(i==1 || i== 3|| i==5 || i==9 || i == 15)
             {
-                ellipse(location.x-i,location.y-i,size-i/3,size-i/3);
+                if(StageData.stageNum>=2) {
+                    myStar[i].myStar();
+                    myStar[i].myDisplay();
+                }
             }
+            else
+            {
+                if(StageData.stageNum>=1) {
+                    myStar[i].shine();
+                    myStar[i].display();
+                }
 
-            if(location.y>height-height/12){
-                location = new PVector(random(-width,width/2),0);
-                temp = random(1,5);
-                size = random(2,4);
-                vel = new PVector(temp,temp);
             }
-
         }
-
     }
+
+    //달
+    void moonDisplay()
+    {
+        drawMoon();
+        drawShadow(((width-width/4)+130)-(moonLight*10),height/10);
+        moonLight+=0.01;
+        if(moonLight>30)
+            moonLight=0;
+    }
+
+    void drawMoon(){
+        for(int i=1; i<50; i++) {
+            fill(245,10);
+            ellipse(width-width/4, height/10,130-i*5,130-i*5);
+            ellipse(width-width/4, height/10,90,90);
+        }
+    }
+
+    void drawShadow(float x, float y) {
+        for(int i=1; i<30; i++) {
+            fill(7,20,29);
+            ellipse(x, y,130-i*5,130-i*5);
+        }
+    }
+
+
 
    class Woman  {
         PImage woman;

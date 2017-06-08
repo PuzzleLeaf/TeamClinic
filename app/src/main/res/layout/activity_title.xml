@@ -112,7 +112,7 @@
                     android:id="@+id/setting"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@android:drawable/ic_menu_set_as" />
+                    android:src="@drawable/setting" />
 
                 <TextView
                     android:layout_width="match_parent"

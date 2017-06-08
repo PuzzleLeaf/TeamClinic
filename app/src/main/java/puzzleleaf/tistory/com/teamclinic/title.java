@@ -21,6 +21,7 @@ import puzzleleaf.tistory.com.teamclinic.Review.Review;
 import puzzleleaf.tistory.com.teamclinic.Splash.Splash;
 import puzzleleaf.tistory.com.teamclinic.Story.Story;
 import puzzleleaf.tistory.com.teamclinic.help.Help;
+import puzzleleaf.tistory.com.teamclinic.processing.StageData;
 import puzzleleaf.tistory.com.teamclinic.processing.StarTitle;
 import puzzleleaf.tistory.com.teamclinic.setting.Setting;
 
@@ -33,6 +34,7 @@ public class title extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle dtToggle;
     boolean drawerChcek = false;
+    StageData setData ;
     int i=1;
 
     @Override
@@ -45,6 +47,8 @@ public class title extends AppCompatActivity {
         init();
         buttonInit();
         setPermission();
+
+
 
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
@@ -79,6 +83,9 @@ public class title extends AppCompatActivity {
 
         drawerLayout.addDrawerListener(dtToggle);
         dtToggle.syncState();
+
+        setData = new StageData(getApplicationContext());
+        setData.getStage();
     }
 
     void buttonInit()

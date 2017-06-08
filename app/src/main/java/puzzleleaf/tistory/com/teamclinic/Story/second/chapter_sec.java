@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import puzzleleaf.tistory.com.teamclinic.R;
 import puzzleleaf.tistory.com.teamclinic.Story.Vr_Info;
 import puzzleleaf.tistory.com.teamclinic.Unity.UnityPlayerActivity;
+import puzzleleaf.tistory.com.teamclinic.processing.StageData;
 
 
 public class chapter_sec extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class chapter_sec extends AppCompatActivity {
     //이미지 리소스 사용을 위한 TypedArray
     private TypedArray second_story;
     private int story_idx = 0;
+    private StageData setData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class chapter_sec extends AppCompatActivity {
 
     void init()
     {
+        setData = new StageData(getApplicationContext());
         second_frame = (LinearLayout) findViewById(R.id.chapter_story);
         second_frame.setBackgroundResource(second_story.getResourceId(story_idx++,-1));
 
@@ -48,6 +51,8 @@ public class chapter_sec extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
                     intent.putExtra("contents","1");
                     startActivity(intent);
+                    setData.saveStage(++StageData.stageNum);
+                    setData.getStage();
                     finish();
                 }
             }

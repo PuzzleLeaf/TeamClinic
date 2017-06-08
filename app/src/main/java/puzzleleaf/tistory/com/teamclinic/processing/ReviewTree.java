@@ -51,7 +51,7 @@ public class ReviewTree extends PApplet {
         pathfinder() {
             location = new PVector(width/2, height);
             velocity = new PVector(0, -1);
-            diameter = 16;
+            diameter = StageData.treeNum;
         }
 
         pathfinder(pathfinder parent) {

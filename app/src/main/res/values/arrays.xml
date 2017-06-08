@@ -67,5 +67,11 @@
         <item>@drawable/chapter_thr_p</item>
         <item>@drawable/chapter_thr_q</item>
     </array>
+    <array name="vr_info_fir">
+        <item>@drawable/vr_fir_a</item>
+        <item>@drawable/vr_fir_b</item>
+        <item>@drawable/vr_fir_c</item>
+        <item>@drawable/vr_info</item>
+    </array>
 
 </resources>

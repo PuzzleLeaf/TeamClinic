@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -15,11 +16,14 @@ import android.widget.Button;
 import puzzleleaf.tistory.com.teamclinic.R;
 import puzzleleaf.tistory.com.teamclinic.Review.board.AuthActivity;
 import puzzleleaf.tistory.com.teamclinic.processing.ReviewTree;
+import puzzleleaf.tistory.com.teamclinic.processing.StageData;
 import puzzleleaf.tistory.com.teamclinic.processing.StarTitle;
 
 
 public class Review extends AppCompatActivity {
 
+
+    private StageData stageData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +52,12 @@ public class Review extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        stageData = new StageData(getApplicationContext());
+        stageData.saveTree(++StageData.treeNum);
+        stageData.getTree();
+
+        Log.d("qwe",String.valueOf(StageData.treeNum));
 
     }
 

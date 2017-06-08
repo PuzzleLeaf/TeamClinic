@@ -5,25 +5,91 @@
     android:layout_height="match_parent"
     android:background="#07141d"
     android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
-            android:layout_gravity="left"
-            android:textStyle="bold"
-            android:text="개인정보 처리방침 페이지"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:text="개인정보 처리방침 페이지"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/setting_page"
+                android:text="http://puzzleleaf.tistory.com/130"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/setting_page"
-            android:text="http://puzzleleaf.tistory.com/130"/>
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="오픈소스 라이센스"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="[processing-android]"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/processing_page"
+                android:text="https://github.com/processing/processing-android/wiki"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Processing for Android is copyright of The Processing Foundation.
+
+The core library is released under the GNU Lesser General Public License (LGPL) version 2.1, while the mode itself uses the GNU General Public License (GPL) version 2. This means that you can use the core library to develop your own apps without having to release the source code of your apps if you don't want to, as long as their licenses allow the users to modify the library.
+
+However, any derivative of the Android Mode must to remain under the GPL, and any derivative of the core library must remain under the terms of the LGPL."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"
+                    android:text="애니메이션 효과 초기화"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:text="Reset"
+                    android:id="@+id/animaton_reset"
+                    android:background="@drawable/white_btn"/>
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
+
 
 
 

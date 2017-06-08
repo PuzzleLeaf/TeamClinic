@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import puzzleleaf.tistory.com.teamclinic.R;
 import puzzleleaf.tistory.com.teamclinic.Story.Vr_Info;
 import puzzleleaf.tistory.com.teamclinic.Unity.UnityPlayerActivity;
+import puzzleleaf.tistory.com.teamclinic.processing.StageData;
 
 
 public class chapter_thr extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class chapter_thr extends AppCompatActivity {
     //이미지 리소스 사용을 위한 TypedArray
     private TypedArray thr_story;
     private int story_idx = 0;
+    private StageData setData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,26 +36,30 @@ public class chapter_thr extends AppCompatActivity {
 
     void init()
     {
+        setData = new StageData(getApplicationContext());
         thr_frame = (LinearLayout) findViewById(R.id.chapter_story);
         thr_frame.setBackgroundResource(thr_story.getResourceId(story_idx,-1));
 
         thr_frame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                story_idx++;
+
                 if(story_idx<17 && story_idx!=11) {
                     thr_frame.setBackgroundResource(thr_story.getResourceId(story_idx, -1));
+                    story_idx++;
                 }
                 else if(story_idx == 11)
                 {
                     Intent intent = new Intent(getApplicationContext(), Vr_Info.class);
                     intent.putExtra("contents","3");
+                    story_idx++;
                     startActivity(intent);
-                    thr_frame.setBackgroundResource(thr_story.getResourceId(story_idx, -1));
                 }
                 else
                 {
                     Intent intent = new Intent(getApplicationContext(),chapter_final.class);
+                    setData.saveStage(++StageData.stageNum);
+                    setData.getStage();
                     startActivity(intent);
                     finish();
                 }
