@@ -1,9 +1,14 @@
 # VR을 활용한 장애체험 App 프로젝트
 
-<p align="center">
-  <img src="img/logo.png">
-</p>
+[![TeamClinic](https://github.com/PuzzleLeaf/TeamClinic/blob/master/img/youtube.PNG)](https://www.youtube.com/embed/7Nvs_3KvaP0)
 
+
+<p align="center">
+<br>
+<br>
+  <img src="img/logo.png">
+  <br>
+</p>
 
 <p>
  <br>
