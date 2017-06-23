@@ -29,6 +29,7 @@ import puzzleleaf.tistory.com.teamclinic.setting.Setting;
  * Created by cmtyx on 2017-04-08.
  */
 
+//새로운 코드를 추가했다.
 public class title extends AppCompatActivity {
     Toolbar toolbar;
     DrawerLayout drawerLayout;
