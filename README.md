@@ -110,3 +110,8 @@
 </p>
  
  
+ <p align="center">
+  <a href="https://github.com/PuzzleLeaf/TeamClinic/blob/master/doc/Team%20Clinic%20%EC%B5%9C%EC%A2%85%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf"><img src="img/1.png"></a>
+  <a href="https://github.com/PuzzleLeaf/TeamClinic/blob/master/doc/Team%20Clinic%20%EC%A0%9C%EC%95%88%EC%84%9C.pdf"><img src="img/2.PNG"></a><br>
+</p>
+ 
